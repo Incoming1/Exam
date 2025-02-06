@@ -8,7 +8,8 @@ const createUser = async (req, res) => {
         console.log(savedUser)
         res.json(200).send('user created successfully')
     } catch (error) {
-        
+        console.log(error)
+        res.json('something is wrong')
     }
 }
 

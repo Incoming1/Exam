@@ -20,8 +20,10 @@ const user = new mongoose.Schema({
     isAdmin: {
         type: Boolean,
         require: true
-    }
-})
+    },
+},
+{timestamps:true}
+)
 
 
 const userModel = mongoose.model('User', user)

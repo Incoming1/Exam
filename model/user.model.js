@@ -14,7 +14,7 @@ const user = new mongoose.Schema({
         require: true
     },
     age: {
-        type: String,
+        type: Number,
         require: true
     },
     isAdmin: {
